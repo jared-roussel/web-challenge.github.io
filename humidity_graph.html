@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude vs. Humidity</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+</head>
+<style>
+  .dropdown:hover .dropdown-menu{
+      display:block;
+  }
+  .dropdown-menu {
+      margin-top: 0px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Latitude and Weather</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">Data</a>
+            </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="max_temp_graph.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity_graph.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness_graph.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed_graph.html">Wind Speed</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="NH_temp_regression.html">Northern Hemisphere</a>
+              <a class="dropdown-item" href="SH_temp_regression.html">Southern Hemisphere</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <img alt="lat_vs_humidity" src="assets\images\latitude_humidity_scatter.png"
+    width="550" height="500">
+
+    <div class="col-sm-12 col-md-4" id="visualizations">
+      <h1 class="header-text">Visualizations</h1>
+      <a class="landing-graphs" href="max_temp_graph.html">
+          <img target="_blank" alt="lat_vs_temp" src="assets\images\latitude_temperature_scatter.png"
+          width="250" height="200"></a>
+      <a class="landing-graphs" href="humidity_graph.html">
+          <img target="_blank" alt="lat_vs_humidity" src="assets\images\latitude_humidity_scatter.png"
+          width="250" height="200"></a> 
+      <a class="landing-graphs" href="cloudiness_graph.html">
+          <img target="_blank" alt="lat_vs_cloudiness" src="assets\images\latitude_cloudiness_scatter.png"
+          width="250" height="200"></a>  
+      <a class="landing-graphs" href="windspeed_graph.html">
+          <img target="_blank" alt="lat_vs_wind" src="assets\images\latitude_windspeed_scatter.png"
+          width="250" height="200"></a> 
+      <a class="landing-graphs" href="NH_temp_regression.html">
+          <img target="_blank" alt="NH_temp_regression" src="assets\images\NH_latitude_temperature_regression.png"
+          width="250" height="200"></a> 
+      <a class="landing-graphs" href=SH_temp_regression.html>
+          <img target="_blank" alt="SH_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
+          width="290" height="200"></a> 
+      </div>  
+</body>

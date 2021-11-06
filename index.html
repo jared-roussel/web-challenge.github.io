@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <style> </style>
+  <title>Latitude and Weather</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+  </head>
+<style>
+    .dropdown:hover .dropdown-menu{
+        display:block;
+    }
+    .dropdown-menu {
+        margin-top: 0px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">Latitude and Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">Data</a>
+                </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="max_temp_graph.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity_graph.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness_graph.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed_graph.html">Wind Speed</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="NH_temp_regression.html">Northern Hemisphere</a>
+                  <a class="dropdown-item" href="SH_temp_regression.html">Southern Hemisphere</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="row">
+    <div class="col-sm-12 col-md-8" id="summary">
+        <h1 class="header-text">Summary: Latitude vs. Weather</h1>
+<hr>
+
+<div class="card text-white bg-primary mb-3">
+    <div class="card-header"><h2>Project Purpose</h2></div>
+    <div class="card-body">
+      <p class="card-text">The purpose of this project was to analyze how weather changes as one gets closer to the equator (<b>Latitude = 0</b>). The aim was to analyze (4) common components of weather:</p>
+      <ul>
+          <li>Maximum Temperature (Fahrenheit)</li>
+          <li>Cloudiness (%)</li>
+          <li>Humidity (%)</li>
+          <li>Wind Speed (mph)</li>
+      </ul></p>
+    </div>
+  </div>
+  <div class="card text-white bg-secondary mb-3"">
+    <div class="card-header"><h2>Project Methodology</h2></div>
+    <div class="card-body">
+      <p class="card-text">To accomplish the project goal, we performed the following main tasks:</p>
+      <ol>
+          <li>Pulled data from <b>OpenWeatherMap API</b> to assemble a dataset of over 500 cities</li>
+          <li>Used <b>Matplotlib</b> library to plot the components of weather vs. the latitude</li>
+      </ol>
+      <p>This site provides the source data, visualizations and analysis for weather conditions.</p>
+    </div>
+  </div>
+<br>
+<br>
+</div>
+<div class="col-sm-12 col-md-4" id="visualizations">
+<h1 class="header-text">Visualizations</h1>
+<a class="landing-graphs" href="max_temp_graph.html">
+    <img target="_blank" alt="lat_vs_temp" src="assets\images\latitude_temperature_scatter.png"
+    width="250" height="200"></a>
+<a class="landing-graphs" href="humidity_graph.html">
+    <img target="_blank" alt="lat_vs_humidity" src="assets\images\latitude_humidity_scatter.png"
+    width="250" height="200"></a> 
+<a class="landing-graphs" href="cloudiness_graph.html">
+    <img target="_blank" alt="lat_vs_cloudiness" src="assets\images\latitude_cloudiness_scatter.png"
+    width="250" height="200"></a>  
+<a class="landing-graphs" href="windspeed_graph.html">
+    <img target="_blank" alt="lat_vs_wind" src="assets\images\latitude_windspeed_scatter.png"
+    width="250" height="200"></a> 
+<a class="landing-graphs" href="NH_temp_regression.html">
+    <img target="_blank" alt="NH_temp_regression" src="assets\images\NH_latitude_temperature_regression.png"
+    width="250" height="200"></a> 
+<a class="landing-graphs" href=SH_temp_regression.html>
+    <img target="_blank" alt="SH_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
+    width="290" height="200"></a> 
+</div>  
+</div>
+</body>
